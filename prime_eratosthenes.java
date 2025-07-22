@@ -12,7 +12,7 @@ num=sc.nextInt();
             if(arr[i]==false){
                 System.out.println(i);
 
-                for(j=i*2;j<=num;j=j+i){
+                for(j=i*i;j<=num;j=j+i){
                     arr[j]=true;
 
                 }
