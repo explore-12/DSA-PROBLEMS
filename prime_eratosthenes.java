@@ -8,15 +8,22 @@ public class prime_eratosthenes {
 num=sc.nextInt();
         boolean[] arr=new boolean[num+1];
 
-        for(i=2;i<=num;i++){
-            if(arr[i]==false){
+        for(i=2;i<=num;i++)
+        {
+            
+
+            
+            if(arr[i]==false && i<num){
                 System.out.println(i);
 
-                for(j=i*i;j<=num;j=j+i){
+                for(j=i*2;j<=num;j=j+i) //j=i*i can be given 
+                {
                     arr[j]=true;
 
                 }
             }
         }
+        
     }
+    
 }
